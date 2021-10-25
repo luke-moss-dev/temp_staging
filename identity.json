@@ -148,7 +148,7 @@
                 },
                 "settings": {
                     "wmfVersion": "latest",
-                    "modulesUrl": "https://github.com/luke-moss-dev/temp_staging/blob/main/dsc/ActiveDirectoryForest.zip?raw=true",
+                    "modulesUrl": "https://github.com/luke-moss-dev/temp_staging/blob/main/ActiveDirectoryForest.zip?raw=true",
                     "configurationFunction": "ActiveDirectoryForest.ps1\\ActiveDirectoryForest",
                     "properties": {
                         "Domain": "[parameters('Domain')]",
