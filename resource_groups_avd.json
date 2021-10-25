@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "ResourceGroups": {
+            "type": "array",
+            "metadata": {
+                "description": "Resource group identifier"
+            },
+            "defaultValue": [
+                {
+                    "Name":"rg-rsinc-avd-wus",
+                    "Location":"westus"
+                },
+                {
+                    "Name":"rg-rsinc-avd-cus",
+                    "Location":"centralus"
+                },
+                {
+                    "Name":"rg-rsinc-avd-eus",
+                    "Location":"eastus"
+                }
+            ]
+        }
+    },
+    "resources": [
+        {
+            "comments": "---------- RESOURCE GROUPS ----------",
+            "name": "[parameters('ResourceGroups')[copyIndex()].Name]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2019-10-01",
+            "location": "[parameters('ResourceGroups')[copyIndex()].Location]",
+            "tags": {},
+            "properties": {},
+            "copy": {
+                "name": "rgLoop",
+                "count": "[length(parameters('ResourceGroups'))]"
+            }
+        }   
+    ]
+}
