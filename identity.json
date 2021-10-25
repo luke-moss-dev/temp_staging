@@ -51,7 +51,7 @@
             "tags": {},
             "copy": {
                 "name": "nicLoop",
-                "count": 2
+                "count": 1
             },
             "properties": {
                 "ipConfigurations": [
@@ -80,7 +80,7 @@
             ],
             "copy": {
                 "name": "vmLoop",
-                "count": 2
+                "count": 1
             },
             "properties": {
                 "hardwareProfile": {
@@ -148,7 +148,7 @@
                 },
                 "settings": {
                     "wmfVersion": "latest",
-                    "modulesUrl": "https://github.com/microsoft/WhatTheHack/blob/master/037-AzureVirtualDesktop/Student/Resources/dsc/ActiveDirectoryForest.zip?raw=true",
+                    "modulesUrl": "https://github.com/luke-moss-dev/temp_staging/blob/main/dsc/ActiveDirectoryForest.zip?raw=true",
                     "configurationFunction": "ActiveDirectoryForest.ps1\\ActiveDirectoryForest",
                     "properties": {
                         "Domain": "[parameters('Domain')]",

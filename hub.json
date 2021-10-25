@@ -66,7 +66,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/microsoft/WhatTheHack/master/037-AzureVirtualDesktop/Student/Resources/templates/challenge-02_NetworkTemplate.json"
+                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/nest_network.json"
                 }
             }
         },
@@ -88,9 +88,6 @@
                     "Domain": {
                         "value": "[parameters('Domain')]"
                     },
-                    "Environment": {
-                        "value": "[parameters('Environment')]"
-                    },
                     "IpAddresses": {
                         "value": "[variables('IpAddresses')]"
                     },
@@ -111,7 +108,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/microsoft/WhatTheHack/master/037-AzureVirtualDesktop/Student/Resources/templates/challenge-02_IdentityTemplate.json"
+                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/identity.json"
                 }
             }
         }
