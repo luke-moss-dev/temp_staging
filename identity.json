@@ -61,7 +61,7 @@
                             "privateIPAllocationMethod": "Static",
                             "privateIPAddress": "[parameters('IpAddresses')[copyIndex()]]",
                             "subnet": {
-                                "id": "[resourceId(subscription().subscriptionId, concat('rg-rsinc-shsvc-net-', parameters('LocationAbbr')), 'Microsoft.Network/virtualNetworks/subnets', concat('hub-vnet-', parameters('LocationAbbr')), concat('snet-', parameters('LocationAbbr')))]"
+                                "id": "[resourceId(subscription().subscriptionId, concat('rg-rsinc-shsvc-net-', parameters('LocationAbbr')), 'Microsoft.Network/virtualNetworks/subnets', concat('hub-vnet-avd-', parameters('LocationAbbr')), concat('snet-id-', parameters('LocationAbbr')))]"
                             }
                         }
                     }

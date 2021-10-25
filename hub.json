@@ -66,7 +66,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/nest_network.json"
+                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/main/nest_network.json"
                 }
             }
         },
@@ -108,7 +108,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/identity.json"
+                    "uri": "https://raw.githubusercontent.com/luke-moss-dev/temp_staging/main/identity.json"
                 }
             }
         }
